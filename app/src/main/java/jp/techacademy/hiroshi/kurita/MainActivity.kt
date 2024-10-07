@@ -10,8 +10,10 @@ class MainActivity : AppCompatActivity() {
 
         val sayHuman = Human("miyazaki", 30, "kyusyu")
         sayHuman.say()
+        sayHuman.think()
 
         val thinkHuman = Human("tokyo", 30, "kantou")
+        thinkHuman.say()
         thinkHuman.think()
     }
 }
