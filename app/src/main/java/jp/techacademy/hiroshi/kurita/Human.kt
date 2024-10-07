@@ -3,7 +3,7 @@ package jp.techacademy.hiroshi.kurita
 import android.util.Log
 
 
-class Human(name: String, age: Int, override val hobby: String) : Animal(name, age), Thinkable {
+class Human(name: String, age: Int, private val hobby: String) : Animal(name, age), Thinkable {
     override fun say() {
         Log.d("kotlintest", "私の名前は" + name + "です。年は" + age.toString() + "歳です。")
     }
